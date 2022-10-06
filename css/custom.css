@@ -1,0 +1,36 @@
+#produtos {
+    margin-top: 1rem;
+}
+
+.espacotop {
+    margin-top: 2rem;
+}
+
+#formulario-cad {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background-color: aquamarine;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#formulario-cad input, #formulario-cad textarea {
+    margin: .5rem;
+}
+
+#backg {
+    background-image: url("../img/marcenaria/header1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+#paragra {
+    margin-top: 3rem;
+}
+
+#barranav {
+    margin-top: 9rem;
+}
