@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bootstrap</title>
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
   </head>
@@ -15,17 +15,34 @@
                 <div class="col">
                     <ul id="barranav" class="nav justify-content-end">
                         <li></li>
-                        <div class="nav-item"><a class="nav-link" href=""><img width="150px" src="./img/marcenaria/btt-home.png" alt="botão home"></a></div>
-                        <div class="nav-item"><a class="nav-link" href=""><img width="150px" src="./img/marcenaria/btt-sobre.png" alt="botão Sobre"></a></div>
-                        <div class="nav-item"><a class="nav-link" href=""><img width="150px" src="./img/marcenaria/btt-prod.png" alt="botão Produtos"></a></div>
-                        <div class="nav-item"><a class="nav-link" href=""><img width="150px" src="./img/marcenaria/btt-contato.png" alt="botão Contato"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#home"><img onmouseover="this.src='./img/marcenaria/btt-home-select.png'" onmouseout="this.src='./img/marcenaria/btt-home.png'" width="150px" src="./img/marcenaria/btt-home.png" alt="botão home"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#sobre"><img onmouseover="this.src='./img/marcenaria/btt-sobre-select.png'" onmouseout="this.src='./img/marcenaria/btt-sobre.png'" width="150px" src="./img/marcenaria/btt-sobre.png" alt="botão Sobre"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#produtos"><img onmouseover="this.src='./img/marcenaria/btt-prod-select.png'" onmouseout="this.src='./img/marcenaria/btt-prod.png'" width="150px" src="./img/marcenaria/btt-prod.png" alt="botão Produtos"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#formulario-cad"><img onmouseover="this.src='./img/marcenaria/btt-contato-select.png'" onmouseout="this.src='./img/marcenaria/btt-contato.png'" width="150px" src="./img/marcenaria/btt-contato.png" alt="botão Contato"></a></div>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+    <section id="Home">
+        <div class="container">
+            <div class="cabec">
+                <h1 class="p-3">Home</h1>
+            </div>  
+            <div class="row">
+                <div class="col-md-6 col-sm-12" align="justify">
+                    Lorem ipsum egestas aliquam etiam proin urna consequat varius, porta cubilia torquent pellentesque phasellus quisque commodo, aliquam tortor ad imperdiet ultrices curabitur urna. lobortis congue proin curae augue imperdiet sollicitudin conubia felis vel, cubilia donec aliquet justo risus lacinia lobortis urna nisi, malesuada non at mi blandit dolor porttitor ante. mollis est porta odio lorem leo a bibendum arcu, purus donec augue iaculis justo rutrum eleifend amet, curae tempor aliquet nisl sem odio augue. a ante cras morbi lobortis ante blandit eros orci ultricies leo nec, dapibus praesent sapien ultrices urna himenaeos elementum sem cubilia vestibulum ante justo, class mauris nunc eu est tristique gravida risus per dapibus.                     
+                </div>
+                <div class="col-md-6 col-sm-12" align="justify">
+                    Tempor nostra tristique a egestas erat velit fringilla consectetur condimentum adipiscing pulvinar curabitur, lorem arcu cubilia orci massa faucibus quam eleifend taciti morbi pretium, porttitor enim risus adipiscing tortor laoreet et accumsan erat aliquet vulputate. vel ultrices cursus lacus erat nisl semper eleifend, consectetur lorem curabitur ut semper congue, conubia ligula volutpat at dolor lacus. ipsum primis mauris blandit nunc donec ultricies curae, quisque sapien vestibulum litora libero mollis. adipiscing pretium conubia posuere est sed ornare aliquet tellus iaculis, varius sit senectus venenatis sed dapibus netus ut, primis adipiscing primis senectus per fusce aptent quam. 
+                </div>                
+            </div>
+        </section>
     <section id="sobre">
         <div id="paragra" class="container">
+            <div class="cabec">
+                <h1 class="p-3">Sobre</h1>
+            </div>  
             <div class="row">
                 <div class="col-md-6 col-sm-12" align="justify">
                     Lorem ipsum egestas aliquam etiam proin urna consequat varius, porta cubilia torquent pellentesque phasellus quisque commodo, aliquam tortor ad imperdiet ultrices curabitur urna. lobortis congue proin curae augue imperdiet sollicitudin conubia felis vel, cubilia donec aliquet justo risus lacinia lobortis urna nisi, malesuada non at mi blandit dolor porttitor ante. mollis est porta odio lorem leo a bibendum arcu, purus donec augue iaculis justo rutrum eleifend amet, curae tempor aliquet nisl sem odio augue. a ante cras morbi lobortis ante blandit eros orci ultricies leo nec, dapibus praesent sapien ultrices urna himenaeos elementum sem cubilia vestibulum ante justo, class mauris nunc eu est tristique gravida risus per dapibus.                     
@@ -35,79 +52,99 @@
                 </div>                
             </div>
             <section id="produtos">
+                <div class="cabec">
+                    <h1 class="p-3">Produtos</h1>
+                </div>                    
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="./img/" alt="buda" class="img-fluid">
+                            <div class="card omg">
+                                <img src="./img/produtos/martelo.jpg" width="332px" alt="martelo" class="img-fluid">
                                 <div class="card-body">
-                                    <h5 class="card-title">Estátua de Buda</h5>
+                                    <h5 class="card-title">Martelo Unha Carpinteiro 31 Mm Com Cabo De Madeira - Bellota</h5>
                                     <p class="card-text" style="text-align: justify">
-                                        O monumento, localizado no Mosteiro Zen Budista, pesa 350 toneladas e tem 35 metros de altura, sendo maior do que o Cristo Redentor, no Rio de Janeiro, que mede 30 metros desconsiderando o pedestal.<br><br>
-                                        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
+                                        <span style="color: brown; font-weight: bold;">Descrição do produto</span><br>
+                                        Martelo Unha Carpinteiro 31 Mm com Cabo De Madeira - Bellota<br>
+                                        Descrição<br>
+                                        - Martelo Unha Carpinteiro com Cabo de Madeira 8001<br>
+                                        - Marca: Bellota<br>
+                                        - Modelo: 8001<br>
+                                        - Tamanho: 31 mm<br>
+                                        Comprimento do Cabo: 285 mm<br>
+                                        Comprimento Total: 335 mm<br>
+                                        Peso: 742 g<br>
+                                        - Fixação da Cabeça ao Cabo Por Cunha Metálica<br>
+                                        - Com Cabo de Madeira<br>
+                                        - Cabo Com Acabamento Lixado <br><br>
+                                        <a class="btn btn-primary omgbtt" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="./img/kit-costura.jpg" alt="kitcostura" class="img-fluid">
+                            <div class="card omg">
+                                <img src="./img/produtos/cerrote.jpg" width="280px" alt="serrote" class="img-fluid">
                                 <div class="card-body">
-                                    <h5 class="card-title">Kit de Costura</h5>
+                                    <h5 class="card-title">Serrote Para Madeira, 16 400 Mm, 7-8 Dpp, Dentes Temperado Sparta</h5>
                                     <p class="card-text" style="text-align: justify">
-                                        Kit de Costura, Kit de Costura Completa com Estojo Transporte, 112 Peças Costura 
-                                        Conjunto Home Família Acessórios de Viagem, Uso de Emergência<br><br>
-                                        <a class="btn btn-primary" href="#produto-2">Ver Produto</a>
+                                        <span style="color: brown; font-weight: bold;">Descrição do produto</span><br>
+                                        O serrote para madeira da MTX é produzido de aço de 65 Mn e possui revestimento de teflon o que impede à corrosão e reduz a fricção da lâmina ao serrar. A têmpera dos dentes aumenta sua vida útil e permite que não necessitem de afiação. O número de dentes por uma polegada é de 7. O cabo do da peça tem uma proteção de borracha na madeira que garante uma alta taxa de amortecimento (absorção de oscilações resultantes da serragem) e também protege excelentemente o cabo de deformações mecânicas.<br><br>
+                                        <a class="btn btn-primary omgbtt" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card">
-                                <img src="./img/luvas.jpg" alt="luvas" class="img-fluid">
+                            <div class="card omg">
+                                <img src="./img/produtos/pregos.jpg" width="300px" alt="pregos" class="img-fluid">
                                 <div class="card-body">
-                                    <h5 class="card-title">Luvas de Lã</h5>
+                                    <h5 class="card-title">Kit Premium 1590 Pregos Parafusos Philips Buchas</h5>
                                     <p class="card-text" style="text-align: justify">
-                                        Luva em malha de trico de lã. Acabamento nos punhos reforçados em malha canelada Malha com boa elasticidade e flexibilidade Indicada para frio ameno e de pouca umidade Pode ser usada por baixo de outra luva. <br><br>
-                                        <a class="btn btn-primary" href="#produto-3">Ver Produto</a>
+                                        <span style="color: brown; font-weight: bold;">Descrição do produto</span><br>
+                                        Kit super prático e adequado para uso doméstico, oficinas e escritórios. Começou um trabalho e faltou um parafuso ou uma bucha? Com o Kit Premiumde 1590 peçasnão corra mais esse risco. Excelente custo/benefício! A Kit Parafusos é uma loja que atua no mercado online desde 2013. Trabalhamos apenas com produtos e marcas de qualidade. Antes de comprar, fale conosco. Teremos o maior prazer em tirar suas dúvidas. Conteúdo: Parafuso cabeça chata philips: 200 - 2,5 x 16 150 - 2,8 x 20 100 - 3,2 x 25 70 - 3,8 x 22 30 - 4,5 x 30 30 - 4,5 x 50 Buchas 50 buchas 5 35 buchas 6 25 buchas 7 30 buchas 8 Pregos 400 - 8 x 8 200 - 10 x 10 130 - 12 x 12 80 - 13x 15 60 buchas 7 30 buchas 8 Pregos 400 - 8 x 8 200   <br><br>
+                                        <a class="btn btn-primary omgbtt" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-12 espacotop">
-                                <div class="card">
-                                    <img src="./img/vasos-ceramica.jpg" alt="vasos de cerâmica" class="img-fluid">
+                                <div class="card omg">
+                                    <img src="./img/produtos/furadeira.jpg" width="300px" alt="furadeira" class="img-fluid">
                                     <div class="card-body">
-                                        <h5 class="card-title">Estátua de Buda</h5>
+                                        <h5 class="card-title">FURADEIRA DE IMPACTO 1/2" (13MM) 710W, VVR, 220V (NACIONAL)</h5>
                                         <p class="card-text" style="text-align: justify">
-                                            O monumento, localizado no Mosteiro Zen Budista, pesa 350 toneladas e tem 35 metros de altura, sendo maior do que o Cristo Redentor, no Rio de Janeiro, que mede 30 metros desconsiderando o pedestal.<br><br>
-                                            <a class="btn btn-primary" href="#produto-4">Ver Produto</a>
+                                            <span style="color: brown; font-weight: bold;">Descrição do produto</span><br>
+                                            A Furadeira de Impacto 1/2 Pol. é ideal para perfurações em alvenaria, madeiras, metais e plásticos. Possui empunhadura lateral 360° para maior controle e versatilidade, gatilho de 2 dedos com trava de uso contínuo, velocidade variável e reversível, suporte para chave do mandril no cabo elétrico, motor 100% apoiado em rolemantos de esferas e empunhadura emborrachada.<br><br>
+                                            <a class="btn btn-primary omgbtt" data-bs-toggle="modal" data-bs-target="#modal-4">Ver Produto</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 espacotop">
-                                <div class="card">
-                                    <img src="./img/kit-costura.jpg" alt="kitcostura" class="img-fluid">
+                                <div class="card omg">
+                                    <img src="./img/produtos/serra-circular.jpg" width="300px" alt="Serra Circular" class="img-fluid">
                                     <div class="card-body">
-                                        <h5 class="card-title">Kit de Costura</h5>
+                                        <h5 class="card-title">Serra Circular Madeira 7.1/4 3 Discos 1800w DeWalt (127v)</h5>
                                         <p class="card-text" style="text-align: justify">
-                                            Kit de Costura, Kit de Costura Completa com Estojo Transporte, 112 Peças Costura 
-                                            Conjunto Home Família Acessórios de Viagem, Uso de Emergência<br><br>
-                                            <a class="btn btn-primary" href="#produto-5">Ver Produto</a>
+                                            <span style="color: brown; font-weight: bold;">Descrição do produto</span><br>
+                                            Serra Circular Madeira 7.1/4 (185mm) 3 discos 1800W SCS1800K3 Starflex. <br>A serra circular SCS1800K3 da Starflex foi desenvolvida com tecnologia de ponta, com empunhadura ergonômica proporcionando maior precisão e potencia para cortes profissionais. Sua base em aço proporciona maior durabilidade. Possui cabo elétrico padrão INMETRO com 2 metros de comprimento, motor de alto desempenho rolamentado e bobinado em cobre, com 1800W. Conta com guia paralela e chave para troca do disco.<br><br>
+                                            <a class="btn btn-primary omgbtt" data-bs-toggle="modal" data-bs-target="#modal-5">Ver Produto</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12 espacotop">
-                                <div class="card">
-                                    <img src="./img/luvas.jpg" alt="luvas" class="img-fluid">
+                                <div class="card omg">
+                                    <img src="./img/produtos/lapis.jpg" alt="lápis" class="img-fluid">
                                     <div class="card-body">
-                                        <h5 class="card-title">Luvas de Lã</h5>
+                                        <h5 class="card-title">Lapis Carpinteiro Brasfort c/72pcs</h5>
                                         <p class="card-text" style="text-align: justify">
-                                            Luva em malha de trico de lã. Acabamento nos punhos reforçados em malha canelada Malha com boa elasticidade e flexibilidade Indicada para frio ameno e de pouca umidade Pode ser usada por baixo de outra luva. <br><br>
-                                            <a class="btn btn-primary" href="#produto-6">Ver Produto</a>
+                                            <span style="color: brown; font-weight: bold;">Descrição do produto</span><br>
+                                            O lápis carpinteiro é ideal para marcar madeira
+                                            Seu formato se adapta com facilidade à mão
+                                            Grafite forte, não quebra com facilidade <br><br>
+                                            <a class="btn btn-primary omgbtt" data-bs-toggle="modal" data-bs-target="#modal-6">Ver Produto</a>
                                         </p>
                                     </div>
                                 </div>
@@ -115,11 +152,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="cabec2">
+                    <h1 class="p-3">Fale Conosco</h1>
+                </div>
             </section>
             <section id="formulario-cad">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <h2>Contato</h2>
+                        <hr>
                         <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -131,9 +172,9 @@
                                 <input class="form-control" type="email" name="email-teste" id="" placeholder="Digite seu email: ">
                             </div>
                             <div class="input-group">
-                                <textarea name="textform" class="form-control" rows="5"></textarea>
+                                <textarea name="textform" class="form-control" placeholder="Sua mensagem aqui!" rows="5"></textarea>
                             </div>                            
-                            <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                            <button id="envv" type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
                         </form>
                     </div>
                 </div>
@@ -144,42 +185,217 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">                            
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title">Martelo Unha Carpinteiro 31mm - com cabo de madeira</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
+                    <h6>Confira os preços abaixo:</h6>
                     <table class="table table-hover">
                        <thead>
                             <tr>
-                                <th>Tamanho</th>
+                                <th>Quantidade</th>
                                 <th>Valor</th>
                             </tr>
                        </thead>
                        <tbody>
                             <tr>
-                                <td>P</td>
-                                <td>R$20.000,00</td>
+                                <td>1</td>
+                                <td>R$ 112,31</td>
                             </tr>
                             <tr>
-                                <td>M</td>
-                                <td>R$32.000,00</td>
+                                <td>2</td>
+                                <td>R$ 202,00</td>
                             </tr>
                             <tr>
-                                <td>G</td>
-                                <td>R$38.000,00</td>
+                                <td>3</td>
+                                <td>R$300,00</td>
                             </tr>
                        </tbody> 
                     </table>
-                </div>
-                <!--
-                <div class="modal-footer">
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-            -->
+                </div>  
             </div>
         </div>
-    </div>    
+    </div>
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                            
+                    <h5 class="modal-title">Serrote Para Madeira, 16 400 Mm, 7-8 Dpp, Dentes Temperado Sparta</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços abaixo:</h6>
+                    <table class="table table-hover">
+                       <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>R$ 225,31</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>R$ 280,00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>R$330,00</td>
+                            </tr>
+                       </tbody> 
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                            
+                    <h5 class="modal-title">Kit Premium 1590 Pregos Parafusos Philips Buchas</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços abaixo:</h6>
+                    <table class="table table-hover">
+                       <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>R$ 30,95</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>R$ 50,00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>R$ 70,00</td>
+                            </tr>
+                       </tbody> 
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                            
+                    <h5 class="modal-title">FURADEIRA DE IMPACTO 1/2" (13MM) 710W, VVR, 220V (NACIONAL)</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços abaixo:</h6>
+                    <table class="table table-hover">
+                       <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>R$ 560,31</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>R$ 1030,00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>R$ 1400,00</td>
+                            </tr>
+                       </tbody> 
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                            
+                    <h5 class="modal-title">Serra Circular Madeira 7.1/4 3 Discos 1800w DeWalt (127v)</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços abaixo:</h6>
+                    <table class="table table-hover">
+                       <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>R$ 785,20</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>R$ 1400,00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>R$ 2000,00</td>
+                            </tr>
+                       </tbody> 
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">                            
+                    <h5 class="modal-title">Lapis Carpinteiro Brasfort c/72pcs</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os preços abaixo:</h6>
+                    <table class="table table-hover">
+                       <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td>1 CX</td>
+                                <td>R$ 35,85</td>
+                            </tr>
+                            <tr>
+                                <td>2 CX</td>
+                                <td>R$ 65,80</td>
+                            </tr>
+                            <tr>
+                                <td>3 CX</td>
+                                <td>R$ 80,00</td>
+                            </tr>
+                       </tbody> 
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div> 
+    <footer>
+        <div>
+            <div id="ftext" class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">&copy; Desenvolvido por: Matheus da Costa Ribeiro</div>
+        </div>
+    </footer>        
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
