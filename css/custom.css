@@ -1,0 +1,142 @@
+#produtos {
+    margin-top: 1rem;
+}
+
+.espacotop {
+    margin-top: 2rem;
+}
+
+#formulario-cad {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background-color: #aa3300;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#formulario-cad h2 {
+    color: white;
+}
+
+#formulario-cad hr {
+    height: 12px;
+    color: white;
+    border-top: solid 4px white;
+    opacity: 100;
+}
+
+#formulario-cad p {
+    color: white;
+}
+
+#envv {
+    background-color: #1a0d01;
+    border:none;
+}
+
+#envv:hover {
+    background-color: black;
+}
+
+#formulario-cad input, #formulario-cad textarea {
+    margin: .5rem;
+}
+
+#backg {
+    background-image: url("../img/marcenaria/header1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+#paragra {
+    margin-top: 3rem;
+}
+
+#barranav {
+    margin-top: 9rem;
+}
+
+.cabec {
+    background-color: #1a0d01;
+    margin: 2rem 0 2rem 0;
+}
+
+.cabec h1 {
+    color: white;    
+}
+
+.cabec2 {
+    background-color: #1a0d01;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+}
+
+.cabec2 h1 {
+    color: white;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.omg {
+    border:solid 1px#aa3300
+}
+
+.omgbtt {
+    background-color: #aa3300;
+    border:none;
+}
+
+.omgbtt:hover {
+    background-color: #1a0d01 !important;
+}
+
+footer {
+    background-color: #1a0d01;
+}
+
+#ftext {
+    color: white;
+}
+
+@media (max-width: 992px) {
+    #barranav {
+        top: 0px;
+        margin-top: 5rem;
+        margin-bottom: 9rem;
+    }
+}
+
+@media (max-width: 869px) {
+    #barranav {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #barranav {
+        margin-left: 5rem;
+    }
+
+    .omg {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 684px) {
+    #barranav {
+        margin-top: 0rem;
+        margin-left: 15rem;
+        justify-content: flex-start !important;
+    }
+}
+
+@media (max-width: 437px) {
+    #barranav {
+        margin-left: 13rem;       
+    }
+}
