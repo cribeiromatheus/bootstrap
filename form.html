@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="backg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul id="barranav" class="nav justify-content-end">
+                        <li></li>
+                        <div class="nav-item"><a class="nav-link" href="./index.html"><img onmouseover="this.src='./img/marcenaria/btt-home-select.png'" onmouseout="this.src='./img/marcenaria/btt-home.png'" width="150px" src="./img/marcenaria/btt-home.png" alt="botão home"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#sobre"><img onmouseover="this.src='./img/marcenaria/btt-sobre-select.png'" onmouseout="this.src='./img/marcenaria/btt-sobre.png'" width="150px" src="./img/marcenaria/btt-sobre.png" alt="botão Sobre"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#produtos"><img onmouseover="this.src='./img/marcenaria/btt-prod-select.png'" onmouseout="this.src='./img/marcenaria/btt-prod.png'" width="150px" src="./img/marcenaria/btt-prod.png" alt="botão Produtos"></a></div>
+                        <div class="nav-item"><a class="nav-link" href="#formulario-cad"><img onmouseover="this.src='./img/marcenaria/btt-contato-select.png'" onmouseout="this.src='./img/marcenaria/btt-contato.png'" width="150px" src="./img/marcenaria/btt-contato.png" alt="botão Contato"></a></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="formulario-cad">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h2>Contato</h2>
+                <hr>
+                <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <form action="#" class="form">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="form-teste" id="" placeholder="Nome completo" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="input-group">
+                                <input class="form-control" type="email" name="email-teste" id="" placeholder="email" required>
+                            </div>                                
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade" required>
+                        </div>  
+                        <div class="row">                          
+                            <div id="selec-estad" class="col-lg-2 col-md-2 col-sm-4">
+                                <select name="estado" id="estado" class="form-control" required>
+                                    <option value="">Selecione um estado</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4">
+                                <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" required>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4">
+                                <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Bairro" required>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4">
+                                <input type="number" name="numero" id="numero" class="form-control" placeholder="nº" min="0" max="500000" required>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4">
+                                <input type="text" name="complemento" id="complemento" class="form-control" placeholder="Complemento">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-4">
+                                <input type="tel" name="telefone" id="telefone" class="form-control" placeholder="Telefone" required>
+                            </div>
+                        </div>    
+                        <div class="row">    
+                            <div class="col">
+                                <div class="input-group">
+                                    <textarea name="textform" class="form-control" placeholder="Sua mensagem aqui!" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="chec" class="form-checker">
+                                    <input type="checkbox" name="mensag" id="mensag" value="s">
+                                    <label style="color: white;" for="mensag" class="form-check-label">Aceito receber mensagens promocionais.</label>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                    <button id="envv" type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                </form>
+                <p id="modal_cad1"> <a id="inscrev" href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades.</p>
+            </div>
+        </div>
+    </section>
+    <section id="modal">            
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">                            
+                        <h5 class="modal-title">Quero me inscrever na lista de notícias</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Preencha os campos para se inscrever:</h6>
+                        <form class="form-inline">
+                            <input type="text" name="nome-caad" class="form-control mb-3" placeholder="nome" required>
+                            <input type="email" name="email-caad" class="form-control mb-3" placeholder="email" required>
+                            <button type="submit" class="btn btn-success">Receber novidades</button>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">                            
+                        <h5 class="modal-title">Serrote Para Madeira, 16 400 Mm, 7-8 Dpp, Dentes Temperado Sparta</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os preços abaixo:</h6>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Quantidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>R$ 225,31</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>R$ 280,00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>R$330,00</td>
+                                </tr>
+                            </tbody> 
+                        </table>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">                            
+                        <h5 class="modal-title">Kit Premium 1590 Pregos Parafusos Philips Buchas</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os preços abaixo:</h6>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Quantidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>R$ 30,95</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>R$ 50,00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>R$ 70,00</td>
+                                </tr>
+                            </tbody> 
+                        </table>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">                            
+                        <h5 class="modal-title">FURADEIRA DE IMPACTO 1/2" (13MM) 710W, VVR, 220V (NACIONAL)</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os preços abaixo:</h6>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Quantidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>R$ 560,31</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>R$ 1030,00</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>R$ 1400,00</td>
+                                </tr>
+                            </tbody> 
+                        </table>
+                    </div>  
+                </div>
+            </div>    
+            <div class="modal fade" id="modal-5">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">                            
+                            <h5 class="modal-title">Serra Circular Madeira 7.1/4 3 Discos 1800w DeWalt (127v)</h5>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Confira os preços abaixo:</h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Quantidade</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>R$ 785,20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>R$ 1400,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>R$ 2000,00</td>
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-6">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">                            
+                            <h5 class="modal-title">Lapis Carpinteiro Brasfort c/72pcs</h5>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Confira os preços abaixo:</h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Quantidade</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1 CX</td>
+                                        <td>R$ 35,85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 CX</td>
+                                        <td>R$ 65,80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 CX</td>
+                                        <td>R$ 80,00</td>
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <footer>
+            <div>
+                <div id="ftext" class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">&copy; Desenvolvido por: Matheus da Costa Ribeiro</div>
+            </div>
+        </footer>        
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
